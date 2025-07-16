@@ -1,0 +1,67 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  line-height: 0;
+  padding-block: 1.25rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  padding-block: 8px;
+}
+
+nav ul li:last-child img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 240px;
+}
+
+.profile {
+  display: flex;
+  width: 592px;
+  gap: 2rem;
+}
+
+.profile img {
+  width: 176px;
+  height: 176px;
+  
+}
+
+.profile h1 {
+  color: var(--text-color-primary);
+  font: var(--text-lg);
+  margin-bottom: 8px;
+}
+
+.profile p {
+  font: var(--text-md)
+}
+
+.icons {
+  width: 240px;
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.iconsInside {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

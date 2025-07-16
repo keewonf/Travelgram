@@ -5,18 +5,48 @@
 }
 
 :root {
-  font-family: "Alice", serif;
+  /* Fonte */
+  --font-family: "Poppins", serif;
+  --text-lg: bold 32px/125% var(--font-family);
+  --text: 16px/150%;
+  --text-md: 14px/175% var(--font-family);
+  --text-sm: 12px/175% var(--font-family);
 
   /* Product */
-  --brand-color: #EF5F4C;
+  --brand-color: #ef5f4c;
 
   /* Shape */
-  --background-color: #FFFFFF;
-  --surface-color: #F5F5F5;
-  --skeleton-color: #D9D9D9;
-  --shape-transparency: #FFFFFF;
+  --background-color: #ffffff;
+  --surface-color: #f5f5f5;
+  --skeleton-color: #d9d9d9;
+  --shape-transparency: #ffffff91;
 
   /* Text */
   --text-color-primary: #313131;
-  --text-color-secondary: #6C6C6C;
+  --text-color-secondary: #6c6c6c;
+}
+
+body {
+  color: var(--text-color-secondary);
+  background-color: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
+
+.container {
+  padding-inline: 2rem;
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.bg-surface-color {
+  background-color: var(--surface-color);
 }
