@@ -1,0 +1,12 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1.5rem;
+  font: var(--text-md);
+}
+
+.termos {
+  display: flex;
+  gap: 1.5rem;
+}
