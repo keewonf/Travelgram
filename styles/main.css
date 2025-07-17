@@ -10,3 +10,19 @@ main img {
   width: 17.875rem;
   height: 17.875rem;
 }
+
+@media (max-width: 768px) {
+  main.container {
+    padding-inline: 1rem;
+  }
+
+  main {
+    padding-block: 1rem;
+    gap: 1rem;
+  }
+
+  main img {
+  width: 20.5rem;
+  height: 20.5rem;
+}
+} 

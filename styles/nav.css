@@ -2,6 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font: var(--text);
 
   line-height: 0;
   padding-block: 1.25rem;
@@ -21,4 +22,13 @@ nav ul li:last-child img {
   height: 2.5rem;
 }
 
+@media (max-width: 768px) {
+  nav ul li:nth-child(2) {
+    display: none;
+  }
+
+  nav ul li:nth-child(3) {
+    display: none;
+  }
+}
 

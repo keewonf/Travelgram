@@ -15,8 +15,15 @@ header .container {
   gap: 2rem;
 }
 
-#profile > div { 
+#profile > div {
   max-width: 384px;
+}
+
+#profile img {
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 #profile h1 {
@@ -39,4 +46,31 @@ header .container {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 2rem;
+  }
+  #profile {
+    flex-direction: column;
+  }
+
+  #profile img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  header .container h1 {
+    font-size: 22rem;
+  }
+
+  header ul {
+    margin-top: 2rem;
+  }
 }
